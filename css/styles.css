@@ -122,6 +122,23 @@ a { text-decoration: none; }
 .nav-cta:hover { opacity: .88; transform: translateY(-1px); }
 .hamburger { display: none; background: none; border: none; color: #fff; font-size: 1.55rem; }
 
+/* ── MOBILE NAVBAR FIX ── */
+@media (max-width: 768px) {
+  .nav-cta { display: none; }
+  .nav-cart-btn { width: 32px; height: 32px; font-size: .85rem; }
+  .cart-badge { width: 15px; height: 15px; font-size: .55rem; top: -4px; right: -4px; }
+  .nav-logo-icon { width: 38px; height: 38px; font-size: 13px; }
+  .nav-logo img.logo-img { width: 38px; height: 38px; }
+  .nav-logo-text .name { font-size: 12px; }
+  .nav-logo-text .sub { font-size: 7px; }
+  .nav-inner { padding: 0 14px; gap: 8px; }
+  .nav-right { gap: 8px; }
+}
+@media (max-width: 360px) {
+  .nav-logo-text .sub { display: none; }
+  .nav-logo-text .name { font-size: 11px; }
+}
+
 /* Cart icon */
 .nav-cart-btn {
   position: relative; background: rgba(255,255,255,.1);
